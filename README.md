@@ -1,3 +1,15 @@
+# Number and name of feature: two features 1- Display images 2-  Allow users to vote for their favorite beast
+
+# Estimate of time needed to complete: 6 hours 
+
+# Start time: 4 PM
+
+# Finish time: 10 PM
+
+# Actual time needed to complete: 6 hours
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
