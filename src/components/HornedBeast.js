@@ -20,7 +20,7 @@ import React, { Component } from 'react'
                 <h2>{this.props.title}</h2>
                 <img src={this.props.image_url} alt="" onClick={this.clickImage}></img>
                 <p>{this.props.description}</p>
-                <div>Clicks:{this.state.clicks}<img src="https://w7.pngwing.com/pngs/408/912/png-transparent-right-border-of-heart-mini-heart-s-love-heart-sticker.png"height="50px"width="50px"/></div>
+                <div>Clicks:{this.state.clicks}<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJVGFHOMTZJI2seOBPw0ZeEWBjKGTPSabMvQ&usqp=CAU"height="40px"width="40px"/></div>
             </>
         )
     }
