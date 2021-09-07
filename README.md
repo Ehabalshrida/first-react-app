@@ -1,12 +1,12 @@
-# Number and name of feature: two features 1- Display images 2-  Allow users to vote for their favorite beast
+# Number and name of feature: one feature Display a Modal .
 
-# Estimate of time needed to complete: 6 hours 
+# Estimate of time needed to complete: 7 hours 
 
 # Start time: 4 PM
 
-# Finish time: 10 PM
+# Finish time: 11 PM
 
-# Actual time needed to complete: 6 hours
+# Actual time needed to complete: 7 hours
 
 
 
