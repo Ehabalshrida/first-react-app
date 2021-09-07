@@ -20,7 +20,7 @@ import React, { Component } from 'react'
                 <h2>{this.props.title}</h2>
                 <img src={this.props.image_url} alt="" onClick={this.clickImage}></img>
                 <p>{this.props.description}</p>
-                <p>Clicks:{this.state.clicks}</p>
+                <div>Clicks:{this.state.clicks}<img src=""width="" height=""/></div>
             </>
         )
     }
