@@ -1,31 +1,48 @@
 import React, { Component } from 'react'
-
- class HornedBeast  extends Component {
-    constructor(props){
+import {
+    Card,
+    Button,
+    Col,
+} from 'react-bootstrap';
+class HornedBeast extends Component {
+    constructor(props) {
         super(props);
-      this.state={
-            clicks:0,
+        this.state = {
+            clicks: 0,
         }
     }
-
-    clickImage = () => {  
+    handleClick(){
+        let title = this.props.title;
+        let description = this.props.description;
+        this.props.showImg(title, description);
+        }
+    
+    clickImage = () => {
         this.setState({
-         
-            clicks:this.state.clicks+1,
+
+            clicks: this.state.clicks + 1,
         })
-     }    
+    }
     render() {
         return (
             <>
-                <h2>{this.props.title}</h2>
-                <img src={this.props.image_url} alt="" onClick={this.clickImage}></img>
-                <p>{this.props.description}</p>
-
-                <div>Clicks:{this.state.clicks}<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJVGFHOMTZJI2seOBPw0ZeEWBjKGTPSabMvQ&usqp=CAU"height="40px"width="40px"/></div>
-
+                <Col>
+                <Card style={{ width: '18rem' }}>
+                    <Card.Img variant="top" src={this.props.image_url} onClick={this.clickImge} />
+                    <Card.Body>
+                        <Card.Title>{this.props.title}</Card.Title>
+                        <Card.Text>
+                        {this.props.description}
+                        </Card.Text>
+                        <Button onClick={this.handleClick} variant="primary">Show More </Button>
+                    </Card.Body>
+                </Card>
+                </Col>
             </>
         )
     }
+
 }
 
-export default HornedBeast 
+
+export default HornedBeast

@@ -1,17 +1,18 @@
 import React, { Component } from 'react'
 import HornedBeast from "./HornedBeast";
-import data from "./data.json";
-
+import { Row } from 'react-bootstrap';
  class Main extends Component {
     render() {
         return (
             <>
-            {   data.map( item => {
-                 return ( <HornedBeast title={item.title} image_url={item.image_url} description={item.description}  />)
+            <Row>
+            {  this.props.data.map( item => {
+                 return ( <HornedBeast title={item.title} image_url={item.image_url} description={item.description} showImg={this.props.showImg} />)
             })
             }
-            
+            </Row>
             </>
+
         )
     }
 }
