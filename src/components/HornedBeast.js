@@ -11,10 +11,10 @@ class HornedBeast extends Component {
             clicks: 0,
         }
     }
-    handleClick(){
-        let title = this.props.title;
-        let description = this.props.description;
-        this.props.showImg(title, description);
+    handleClick=()=>{
+       // let title = ;
+        //let description = ;
+        this.props.showImg(this.props.title, this.props.description,this.props.image_url);
         }
     
     clickImage = () => {
