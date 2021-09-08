@@ -40,8 +40,8 @@ closeModal=()=>{
         <SelectedBeast closeModal={this.closeModal}
         showModal={this.state.showModal} 
         title={this.state.title}
-        description={this.state.description}/>
-        image_url={this.state.image_url}
+        description={this.state.description}
+        image_url={this.state.image_url}/>
         <Footer/>
       </>
     )
