@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import data from "./components/data.json";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import SelectedBeast from "./components/SelectedBeast";
+import Forms from './components/Forms';
  class App extends Component {
    constructor(props){
    super(props);
@@ -13,6 +14,8 @@ import SelectedBeast from "./components/SelectedBeast";
     title: "",
     description: "",
     image_url:"",
+    data:data,
+
   }
 }
 showImg=(title, description,image_url)=>
@@ -30,13 +33,16 @@ closeModal=()=>{
     showModal: false,
   })
 }
-
-  
+filterdata=(data)=>{
+this.setState({
+  data:data,
+})}
   render() {
     return (
-      <>
-         <Header/>
-        <Main data={data} showImg={this.showImg}/> 
+     <>
+         <Header/> 
+         <Forms filterdata={this.filterdata}></Forms>        
+         <Main data={this.state.data} showImg={this.showImg}/> 
         <SelectedBeast closeModal={this.closeModal}
         showModal={this.state.showModal} 
         title={this.state.title}
