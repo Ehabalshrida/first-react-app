@@ -32,7 +32,8 @@ class HornedBeast extends Component {
                     <Card.Body>
                         <Card.Title>{this.props.title}</Card.Title>
                         <Card.Text>
-                        {this.props.description}
+                        {this.props.description}<br/>
+                        it has {this.props.horns} horns
                         </Card.Text>
                         <Button onClick={this.handleClick} variant="primary">Show More </Button>
                     </Card.Body>

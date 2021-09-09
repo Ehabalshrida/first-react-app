@@ -33,7 +33,7 @@ closeModal=()=>{
     showModal: false,
   })
 }
-filterdata=(data)=>{
+filterData=(data)=>{
 this.setState({
   data:data,
 })}
@@ -41,7 +41,7 @@ this.setState({
     return (
      <>
          <Header/> 
-         <Forms filterdata={this.filterdata}></Forms>        
+         <Forms filterData={this.filterData}></Forms>        
          <Main data={this.state.data} showImg={this.showImg}/> 
         <SelectedBeast closeModal={this.closeModal}
         showModal={this.state.showModal} 
