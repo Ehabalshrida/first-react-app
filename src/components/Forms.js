@@ -16,7 +16,6 @@ filters=(event)=> {
              } }
 
 
-//
     render() {
         return (
             <>
