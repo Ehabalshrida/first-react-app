@@ -4,6 +4,11 @@ import datar from './data.json'
 class Forms extends Component {
 filters=(event)=> {
     let NumOfHonrns = parseInt(event.target.value);
+    if(NumOfHonrns===0){
+       let data=datar;
+    this.props.filterData(data);
+
+    }
             if(NumOfHonrns){
               let  data=[];
             datar.filter((item) =>{ 
@@ -21,11 +26,13 @@ filters=(event)=> {
             <>
                 <Form >
                     <Form.Select aria-label="Default select example" onChange={(event)=>{this.filters(event)}}>
-                        <option>filter the results based on its horns </option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                        <option value="100">one handred</option>
+                        <option>filter the results based on number of horns </option>
+                        <option value="1">One horn</option>
+                        <option value="2">Two horns</option>
+                        <option value="3">Three horns</option>
+                        <option value="100">One handred horns</option>
+                        <option value="0">All </option>
+
                     </Form.Select>
                     </Form>
             </>
