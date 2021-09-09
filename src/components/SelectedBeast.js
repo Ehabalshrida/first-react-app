@@ -12,7 +12,7 @@ import { Modal, Button ,Image } from 'react-bootstrap'
               <Modal.Title>{this.props.title}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-            <Image  src={this.props.image_url}/>
+            <Image  src={this.props.image_url}width='450' height='400'/><br/>
             {this.props.description}
             
             </Modal.Body>
