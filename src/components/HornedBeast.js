@@ -28,7 +28,7 @@ class HornedBeast extends Component {
             <>
                 <Col>
                 <Card style={{ width: '18rem',height:'36rem', margin:'5rem' }}>
-                    <Card.Img variant="top" src={this.props.image_url} onClick={this.clickImge} />
+                    <Card.Img variant="top" src={this.props.image_url} onClick={this.clickImge} style={{height:'20rem', width:'10rem', margin:'auto'}} />
                     <Card.Body>
                         <Card.Title>{this.props.title}</Card.Title>
                         <Card.Text>
